@@ -12,7 +12,9 @@ if (!function_exists('dump')) {
     function dump ($var, $show = TRUE, $exit = FALSE) {
 
         // Add formatting
-        $output = '<pre>' . var_dump($output) . '</pre>';
+        echo '<pre>';
+        var_dump($var);
+        echo '</pre>';
         
         // Output
         if ($show == TRUE) {
